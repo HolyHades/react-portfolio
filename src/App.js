@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {reveal as Menu} from "react-burger-menu"
 
 export default function App() {
   return (
@@ -22,14 +23,7 @@ export default function App() {
           <li><Link to="/about">About Me</Link></li>
         </ul>
       </div>
-      <div id="navmenu">
-        <a className="closebutton" onclick="closeNav()" id="closebutton">&times;</a>
-        <h2>Navigation</h2>
-        <a href="/de/home.html">Home</a>
-        <a href="/de/gallery.html">Galerie</a>
-        <a href="/de/about.html">Über Mich</a>
-        <a href="/en/home.html">Englisch</a>
-    </div>
+      <mobilemenu />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
@@ -62,4 +56,21 @@ function About() {
       <h1>About Me</h1>
     </div>
   )
+}
+
+class mobilemenu extends React.Component {
+  showSettings (event) {
+    event.preventDefault();
+  }
+
+  render () {
+    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
+    return (
+      <Menu>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+      </Menu>
+    );
+  }
 }
