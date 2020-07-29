@@ -10,11 +10,8 @@ export default function App() {
       <div>
         <h1 className="mobiletitle">Felix Fröhlich<br></br><p>Fotografie</p></h1>
       </div>
-      <div className="menubutton">
-        <i onclick="openNav()" class="material-icons" id="openbutton">menu</i>
-      </div>
       <div className="title">
-        <h1>Felix Fröhlich</h1>
+        <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
       </div>
       <div className="navbarcontainer">
         <ul className="navbar">
