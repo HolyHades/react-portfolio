@@ -18,11 +18,11 @@ function App() {
         >
           Learn React
         </a>
-        <div className="navbar">
-          <ul>
-            <li>Home</li>
-            <li>Gallery</li>
-            <li>About</li>
+        <div className="navbarcontainer">
+          <ul className="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
           </ul>
         </div>
       </header>
