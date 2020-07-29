@@ -1,33 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div className="navbarcontainer">
-          <ul className="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-      </header>
+      <div className="title">
+        <h1>Felix Fröhlich</h1>
+      </div>
+      <div className="navbarcontainer">
+        <ul className="navbar">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+      </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about"  component={About} />
+        <Route path="/gallery"  component={Gallery} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 
-export default App;
+function Home() {
+  return (
+    <div>
+      <h1>Welcome</h1>
+    </div>
+  )
+}
+
+function Gallery() {
+  return (
+    <div>
+      <h1>Gallery</h1>
+    </div>
+  )
+}
+
+function About() {
+  return (
+    <div>
+      <h1>About</h1>
+    </div>
+  )
+}
