@@ -9,112 +9,43 @@ export default function App() {
       <div className="title">
         <h1>Felix Fröhlich</h1>
       </div>
-      <HomeDE />
+      <div className="navbarcontainer">
+        <ul className="navbar">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/about">About Me</Link></li>
+        </ul>
+      </div>
       <Switch>
-        <Route path="/de/" exact component={HomeDE} />
-        <Route path="/de/about"  component={AboutDE} />
-        <Route path="/de/gallery"  component={GalleryDE} />
-        <Route path="/en/" exact component={HomeEN} />
-        <Route path="/en/gallery" exact component={GalleryEN} />
-        <Route path="/en/about" exact component={AboutEN} />
+        <Route path="/" exact component={Home} />
+        <Route path="/about"  component={About} />
+        <Route path="/gallery"  component={Gallery} />
       </Switch>
     </div>
     </Router>
   );
 }
 
-function HomeDE() {
+function Home() {
   return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/de/">Home</Link></li>
-          <li><Link to="/de/gallery">Gallerie</Link></li>
-          <li><Link to="/de/about">Über Mich</Link></li>
-          <li><Link to="/en/">Englisch</Link></li>
-        </ul>
-      </div>
-      <h1>Willkommen</h1>
-    </Router>
+    <div>
+      <h1>Home</h1>
+    </div>
   )
 }
 
-function GalleryDE() {
+function Gallery() {
   return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/de/">Home</Link></li>
-          <li><Link to="/de/gallery">Gallerie</Link></li>
-          <li><Link to="/de/about">Über Mich</Link></li>
-          <li><Link to="/en/">Englisch</Link></li>
-        </ul>
-      </div>
-      <h1>Gallerie</h1>
-    </Router>
-  )
-}
-
-function AboutDE() {
-  return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/de/">Home</Link></li>
-          <li><Link to="/de/gallery">Gallerie</Link></li>
-          <li><Link to="/de/about">Über Mich</Link></li>
-          <li><Link to="/en/">Englisch</Link></li>
-        </ul>
-      </div>
-      <h1>Über Mich</h1>
-    </Router>
-  )
-}
-
-function HomeEN() {
-  return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/en/">Home</Link></li>
-          <li><Link to="/en/gallery">Gallery</Link></li>
-          <li><Link to="/en/about">About Me</Link></li>
-          <li><Link to="/de/">German</Link></li>
-        </ul>
-      </div>
-      <h1>Welcome</h1>
-    </Router>
-  )
-}
-
-function GalleryEN() {
-  return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/en/">Home</Link></li>
-          <li><Link to="/en/gallery">Gallery</Link></li>
-          <li><Link to="/en/about">About Me</Link></li>
-          <li><Link to="/de/">German</Link></li>
-        </ul>
-      </div>
+    <div>
       <h1>Gallery</h1>
-    </Router>
+    </div>
   )
 }
 
-function AboutEN() {
+function About() {
   return (
-    <Router>
-      <div className="navbarcontainer">
-        <ul className="navbar">
-          <li><Link to="/en/">Home</Link></li>
-          <li><Link to="/en/gallery">Gallery</Link></li>
-          <li><Link to="/en/about">About Me</Link></li>
-          <li><Link to="/de/">German</Link></li>
-        </ul>
-      </div>
+    <div>
       <h1>About Me</h1>
-    </Router>
+    </div>
   )
 }
