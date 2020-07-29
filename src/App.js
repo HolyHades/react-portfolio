@@ -6,6 +6,12 @@ export default function App() {
   return (
     <Router>
     <div className="App">
+      <div>
+        <h1 className="mobiletitle">Felix Fröhlich<br></br><p>Fotografie</p></h1>
+      </div>
+      <div className="menubutton">
+        <i onclick="openNav()" class="material-icons" id="openbutton">menu</i>
+      </div>
       <div className="title">
         <h1>Felix Fröhlich</h1>
       </div>
@@ -16,6 +22,14 @@ export default function App() {
           <li><Link to="/about">About Me</Link></li>
         </ul>
       </div>
+      <div id="navmenu">
+        <a className="closebutton" onclick="closeNav()" id="closebutton">&times;</a>
+        <h2>Navigation</h2>
+        <a href="/de/home.html">Home</a>
+        <a href="/de/gallery.html">Galerie</a>
+        <a href="/de/about.html">Über Mich</a>
+        <a href="/en/home.html">Englisch</a>
+    </div>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
