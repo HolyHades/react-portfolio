@@ -4,11 +4,18 @@ import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 
 export default function App() {
   return (
-    <Router>
     <div className="App">
       <div className="title">
         <h1>Felix Fröhlich</h1>
       </div>
+      <DE />
+    </div>
+  );
+}
+
+function DE() {
+  return (
+    <Router>
       <div className="navbarcontainer">
         <ul className="navbar">
           <li><Link to="/de/">Home</Link></li>
@@ -22,12 +29,30 @@ export default function App() {
         <Route path="/de/about"  component={AboutDE} />
         <Route path="/de/gallery"  component={GalleryDE} />
         <Route path="/en/" exact component={HomeEN} />
+      </Switch>
+    </Router>
+  )
+}
+
+function EN() {
+  return (
+    <Router>
+      <div className="navbarcontainer">
+        <ul className="navbar">
+          <li><Link to="/en/">Home</Link></li>
+          <li><Link to="/en/gallery">Gallery</Link></li>
+          <li><Link to="/en/about">About Me</Link></li>
+          <li><Link to="/de/">German</Link></li>
+        </ul>
+      </div>
+      <Switch>
+        <Route path="/en/" exact component={HomeEN} />
         <Route path="/en/about"  component={AboutEN} />
         <Route path="/en/gallery"  component={GalleryEN} />
+        <Route path="/de/" exact component={HomeDE} />
       </Switch>
-    </div>
     </Router>
-  );
+  )
 }
 
 function HomeDE() {
