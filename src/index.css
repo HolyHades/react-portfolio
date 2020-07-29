@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: local("Roboto Slab"), url(./fonts/RobotoSlab.ttf) format('truetype');
+}
