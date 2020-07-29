@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
-import {reveal as Menu} from "react-burger-menu"
+import {slide as Menu} from "react-burger-menu"
 
 export default function App() {
   return (
