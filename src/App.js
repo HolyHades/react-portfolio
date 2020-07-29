@@ -18,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <a href="manjaro.org">Testing this.</a>
       </header>
     </div>
   );
