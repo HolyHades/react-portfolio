@@ -9,6 +9,14 @@ export default function App() {
         <h1>Felix Fröhlich</h1>
       </div>
       <HomeDE />
+      <Switch>
+        <Route path="/de/" exact component={HomeDE} />
+        <Route path="/de/about"  component={AboutDE} />
+        <Route path="/de/gallery"  component={GalleryDE} />
+        <Route path="/en/" exact component={HomeEN} />
+        <Route path="/en/gallery" exact component={GalleryEN} />
+        <Route path="/en/about" exact component={AboutEN} />
+      </Switch>
     </div>
   );
 }
@@ -25,12 +33,6 @@ function HomeDE() {
         </ul>
       </div>
       <h1>Willkommen</h1>
-      <Switch>
-        <Route path="/de/" exact component={HomeDE} />
-        <Route path="/de/about"  component={AboutDE} />
-        <Route path="/de/gallery"  component={GalleryDE} />
-        <Route path="/en/" exact component={HomeEN} />
-      </Switch>
     </Router>
   )
 }
@@ -47,12 +49,6 @@ function GalleryDE() {
         </ul>
       </div>
       <h1>Gallerie</h1>
-      <Switch>
-        <Route path="/de/" exact component={HomeDE} />
-        <Route path="/de/about"  component={AboutDE} />
-        <Route path="/de/gallery"  component={GalleryDE} />
-        <Route path="/en/" exact component={HomeEN} />
-      </Switch>
     </Router>
   )
 }
@@ -69,12 +65,6 @@ function AboutDE() {
         </ul>
       </div>
       <h1>Über Mich</h1>
-      <Switch>
-        <Route path="/de/" exact component={HomeDE} />
-        <Route path="/de/about"  component={AboutDE} />
-        <Route path="/de/gallery"  component={GalleryDE} />
-        <Route path="/en/" exact component={HomeEN} />
-      </Switch>
     </Router>
   )
 }
@@ -91,12 +81,6 @@ function HomeEN() {
         </ul>
       </div>
       <h1>Welcome</h1>
-      <Switch>
-        <Route path="/en/" exact component={HomeEN} />
-        <Route path="/en/about"  component={AboutEN} />
-        <Route path="/en/gallery"  component={GalleryEN} />
-        <Route path="/de/" exact component={HomeDE} />
-      </Switch>
     </Router>
   )
 }
@@ -113,12 +97,6 @@ function GalleryEN() {
         </ul>
       </div>
       <h1>Gallery</h1>
-      <Switch>
-        <Route path="/en/" exact component={HomeEN} />
-        <Route path="/en/about"  component={AboutEN} />
-        <Route path="/en/gallery"  component={GalleryEN} />
-        <Route path="/de/" exact component={HomeDE} />
-      </Switch>
     </Router>
   )
 }
@@ -135,12 +113,6 @@ function AboutEN() {
         </ul>
       </div>
       <h1>About Me</h1>
-      <Switch>
-        <Route path="/en/" exact component={HomeEN} />
-        <Route path="/en/about"  component={AboutEN} />
-        <Route path="/en/gallery"  component={GalleryEN} />
-        <Route path="/de/" exact component={HomeDE} />
-      </Switch>
     </Router>
   )
 }
