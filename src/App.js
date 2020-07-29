@@ -18,7 +18,13 @@ function App() {
         >
           Learn React
         </a>
-        <a href="manjaro.org">Testing this.</a>
+        <div className="navbar">
+          <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>About</li>
+          </ul>
+        </div>
       </header>
     </div>
   );
