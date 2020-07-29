@@ -11,22 +11,50 @@ export default function App() {
       </div>
       <div className="navbarcontainer">
         <ul className="navbar">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><Link to="/de/">Home</Link></li>
+          <li><Link to="/de/gallery">Gallerie</Link></li>
+          <li><Link to="/de/about">Über Mich</Link></li>
+          <li><Link to="/en/">Englisch</Link></li>
         </ul>
       </div>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about"  component={About} />
-        <Route path="/gallery"  component={Gallery} />
+        <Route path="/de/" exact component={HomeDE} />
+        <Route path="/de/about"  component={AboutDE} />
+        <Route path="/de/gallery"  component={GalleryDE} />
+        <Route path="/en/" exact component={HomeEN} />
+        <Route path="/en/about"  component={AboutEN} />
+        <Route path="/en/gallery"  component={GalleryEN} />
       </Switch>
     </div>
     </Router>
   );
 }
 
-function Home() {
+function HomeDE() {
+  return (
+    <div>
+      <h1>Willkommen</h1>
+    </div>
+  )
+}
+
+function GalleryDE() {
+  return (
+    <div>
+      <h1>Gallerie</h1>
+    </div>
+  )
+}
+
+function AboutDE() {
+  return (
+    <div>
+      <h1>Über Mich</h1>
+    </div>
+  )
+}
+
+function HomeEN() {
   return (
     <div>
       <h1>Welcome</h1>
@@ -34,7 +62,7 @@ function Home() {
   )
 }
 
-function Gallery() {
+function GalleryEN() {
   return (
     <div>
       <h1>Gallery</h1>
@@ -42,10 +70,10 @@ function Gallery() {
   )
 }
 
-function About() {
+function AboutEN() {
   return (
     <div>
-      <h1>About</h1>
+      <h1>About Me</h1>
     </div>
   )
 }
