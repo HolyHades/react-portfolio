@@ -14,6 +14,7 @@
   text-align: center;
   font-family: "Roboto Slab", serif;
   margin: 0;
+  text-decoration: none;
 }
 
 h1 {
@@ -28,25 +29,17 @@ h1 {
   color: white;
   text-decoration: none;
   transition: 0.3s;
-  animation-name: text-focus-in;
-  animation-duration: 1s;
 }
 
 .topnav a:visited {
   color: white;
 }
 
-.topnav a:hover {
-  color: #141518;
-  background-color: white;
-}
-
 .mobiletitle {
   display: none;
 }
 
-.mobiletitle h1 {
-  text-decoration: none;
+.mobiletitle a {
   text-align: center;
   margin: 0;
   color: white;
@@ -54,16 +47,16 @@ h1 {
   border-radius: 8px;
   padding: 4px 8px;
   transition: 0.3s;
-  font-size: 48px;
+  font-size: 28px;
 }
 
-.mobiletitle:visited {
+.mobiletitle a:visited {
   color: white;
+  text-decoration: none;
 }
 
-.mobiletitle:hover {
-  color: #141518;
-  background-color: white;
+.mobiletitle h1 {
+  margin: 0;
 }
 
 .mobiletitle p {
@@ -81,11 +74,6 @@ h1 {
   border-radius: 8px;
   color: white;
   transition: 0.3s;
-}
-
-.title:hover {
-  background-color: white;
-  color: #141518;
 }
 
 .title h1 {
@@ -139,9 +127,9 @@ h1 {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin: 0 12px;
   font-size: 24px;
   display: none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .mobilenav li {
@@ -183,6 +171,7 @@ h1 {
 .gallery h1 {
   margin: 0;
   padding: 24px;
+  font-size: 48px;
 }
 
 .grid {
@@ -288,6 +277,46 @@ h1 {
 .about h1 {
   margin: 0;
   padding: 24px;
+  font-size: 48px;
+}
+
+.about p {
+  font-size: 28px;
+}
+
+.form input {
+  width: 500px;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: "Roboto Slab";
+  padding: 8px;
+  border: none;
+}
+
+.form textarea {
+  width: 500px;
+  height: 200px;
+  font-size: 24px;
+  border-radius: 8px;
+  resize: none;
+  margin-top: 8px;
+  font-family: "Roboto Slab";
+  padding: 8px;
+  border: none;
+}
+
+.form button {
+  width: 128px;
+  height: 50px;
+  font-size: 28px;
+  font-family: "Roboto Slab";
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #141518;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -323,12 +352,12 @@ h1 {
   }
 
   .mobilenav {
-    display: flex;
+    display: grid;
   }
 }
 
 @media (orientation: portrait) and (max-width: 500px) {
-    .grid {
+  .grid {
     grid-template-columns: 1fr;
   }
 

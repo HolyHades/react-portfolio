@@ -27,7 +27,7 @@ export default function App() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
-          <a href="https://instagram.com/felx_fr"><img src={ins} class="navimg" alt=""></img></a>
+          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" alt=""></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
@@ -58,10 +58,10 @@ function Home() {
   return (
     
     <div className="home">
+      <div className="topnav">
       <div className="mobiletitle">
         <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
       </div>
-      <div className="topnav">
         <div className="title">
           <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
         </div>
@@ -71,7 +71,7 @@ function Home() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
-          <a href="https://instagram.com/felx_fr"><img src={ins} class="navimg" alt=""></img></a>
+          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" alt=""></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
@@ -90,13 +90,13 @@ function Gallery() {
     <div className="gallery">
       <h1>Gallery</h1>
       <div className="grid">
-        <Link to="/image1"><img src={img1} /*onclick={handler1}*/ alt=""></img></Link>
-        <Link to="/image2"><img src={img2} /*onclick={handler2}*/ alt=""></img></Link>
-        <Link to="/image3"><img src={img3} /*onclick={handler3}*/ alt=""></img></Link>
-        <Link to="/image4"><img src={img4} /*onclick={handler4}*/ alt=""></img></Link>
-        <Link to="/image5"><img src={img5} /*onclick={handler5}*/ alt=""></img></Link>
-        <Link to="/image6"><img src={img6} /*onclick={handler6}*/ alt=""></img></Link>
-        <Link to="/image7"><img src={img7} /*onclick={handler7}*/ alt=""></img></Link>
+        <Link to="/image1"><img src={img1} alt="" /></Link>
+        <Link to="/image2"><img src={img2} alt="" /></Link>
+        <Link to="/image3"><img src={img3} alt="" /></Link>
+        <Link to="/image4"><img src={img4} alt="" /></Link>
+        <Link to="/image5"><img src={img5} alt="" /></Link>
+        <Link to="/image6"><img src={img6} alt="" /></Link>
+        <Link to="/image7"><img src={img7} alt="" /></Link>
       </div>
     </div>
   )
@@ -106,6 +106,23 @@ function About() {
   return (
     <div className="about">
       <h1>About Me</h1>
+      <p>This is a website.</p>
+      <p>Leave me a message:</p>
+      <form name="contact" method="post" className="form">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>Your Name: <br></br><input type="text" name="name"/></label>
+        </p>
+        <p>
+          <label>Your Email: <br></br><input type="email" name="email"/></label>
+        </p>
+        <p>
+          <label>Message: <br></br><textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
     </div>
   )
 }
