@@ -189,10 +189,10 @@
 
 .close {
   position: absolute;
-  top: 75px;
-  right: 50px;
+  top: 24px;
+  right: 24px;
   color: white;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
@@ -207,13 +207,19 @@
 
 .imagecontainer {
   background-color: #141518;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .image {
-  width: 60vw;
+  width: 70%;
   margin: 0 auto;
+  align-self: center;
 }
 
 .image img {
@@ -225,7 +231,7 @@
 .prev {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 0;
   width: auto;
   padding: 16px;
@@ -239,7 +245,7 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 50%;
   right: 0;
   width: auto;
   padding: 16px;
@@ -292,17 +298,8 @@
     display: flex;
   }
 
-  .close {
-    top: 150px;
-    right: 24px;
-  }
-
-  .imagecontainer {
-    padding-top: 35%;
-  }
-
   .image {
-    width: 80%;
+    width: 90%;
   }
 
   .prev, .next {
