@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import bg from "./photos/bg.jpg"
 import img1 from "./photos/pic1.jpg"
 import img2 from "./photos/pic2.jpg"
 import img3 from "./photos/pic3.jpg"
@@ -54,7 +55,9 @@ export default function App() {
 
 function Home() {
   return (
-    <div className="home"></div>
+    <div className="home">
+      <img src={bg} alt=""></img>
+    </div>
   )
 }
 

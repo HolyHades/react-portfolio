@@ -150,8 +150,9 @@
   color: #141518;
 }
 
-.home {
-  opacity: 0;
+.home img {
+  width: 65%;
+  border-radius: 8px;
 }
 
 .gallery {
