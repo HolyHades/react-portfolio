@@ -109,7 +109,7 @@ function About() {
       <h1>About Me</h1>
       <p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
       <p className="abouttext">Leave me a message:</p>
-      <form name="contact" method="post" className="form">
+      <form name="contact" method="post" action="/success" className="form">
         <input type="hidden" name="form-name" value="contact" />
         <p className="abouttext">
           <label>Your Name: <br /><input type="text" name="name"/></label>
