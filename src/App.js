@@ -13,8 +13,8 @@ export default function App() {
   return (
     <Router>
     <div className="App">
-      <div>
-        <h1 className="mobiletitle">Felix Fröhlich<br></br><p>Fotografie</p></h1>
+      <div className="mobiletitle">
+        <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
       </div>
       <div className="topnav">
         <div className="title">
@@ -39,6 +39,13 @@ export default function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
         <Route path="/gallery"  component={Gallery} />
+        <Route path="/image1" component={image1} />
+        <Route path="/image2" component={image2} />
+        <Route path="/image3" component={image3} />
+        <Route path="/image4" component={image4} />
+        <Route path="/image5" component={image5} />
+        <Route path="/image6" component={image6} />
+        <Route path="/image7" component={image7} />
       </Switch>
     </div>
     </Router>
@@ -47,9 +54,7 @@ export default function App() {
 
 function Home() {
   return (
-    <div className="home">
-      <img alt="" src="/src/photos/bg.jpg"></img>
-    </div>
+    <div className="home"></div>
   )
 }
 
@@ -58,13 +63,13 @@ function Gallery() {
     <div className="gallery">
       <h1>Gallery</h1>
       <div className="grid">
-        <img src={img1} /*onclick={handler1}*/ alt=""></img>
-        <img src={img2} /*onclick={handler2}*/ alt=""></img>
-        <img src={img3} /*onclick={handler3}*/ alt=""></img>
-        <img src={img4} /*onclick={handler4}*/ alt=""></img>
-        <img src={img5} /*onclick={handler5}*/ alt=""></img>
-        <img src={img6} /*onclick={handler6}*/ alt=""></img>
-        <img src={img7} /*onclick={handler7}*/ alt=""></img>
+        <Link to="/image1"><img src={img1} /*onclick={handler1}*/ alt=""></img></Link>
+        <Link to="/image2"><img src={img2} /*onclick={handler2}*/ alt=""></img></Link>
+        <Link to="/image3"><img src={img3} /*onclick={handler3}*/ alt=""></img></Link>
+        <Link to="/image4"><img src={img4} /*onclick={handler4}*/ alt=""></img></Link>
+        <Link to="/image5"><img src={img5} /*onclick={handler5}*/ alt=""></img></Link>
+        <Link to="/image6"><img src={img6} /*onclick={handler6}*/ alt=""></img></Link>
+        <Link to="/image7"><img src={img7} /*onclick={handler7}*/ alt=""></img></Link>
       </div>
     </div>
   )
@@ -74,6 +79,97 @@ function About() {
   return (
     <div className="about">
       <h1>About Me</h1>
+    </div>
+  )
+}
+
+function image1() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img1} alt=""></img>
+      </div>
+      <Link to="/image7"><span className="prev">&#10094;</span></Link>
+      <Link to="/image2"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image2() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img2} alt=""></img>
+      </div>
+      <Link to="/image1"><span className="prev">&#10094;</span></Link>
+      <Link to="/image3"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image3() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img3} alt=""></img>
+      </div>
+      <Link to="/image2"><span className="prev">&#10094;</span></Link>
+      <Link to="/image4"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image4() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img4} alt=""></img>
+      </div>
+      <Link to="/image3"><span className="prev">&#10094;</span></Link>
+      <Link to="/image5"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image5() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img5} alt=""></img>
+      </div>
+      <Link to="/image4"><span className="prev">&#10094;</span></Link>
+      <Link to="/image6"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image6() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img6} alt=""></img>
+      </div>
+      <Link to="/image5"><span className="prev">&#10094;</span></Link>
+      <Link to="/image7"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image7() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img7} alt=""></img>
+      </div>
+      <Link to="/image6"><span className="prev">&#10094;</span></Link>
+      <Link to="/image1"><span className="next">&#10095;</span></Link>
     </div>
   )
 }
