@@ -55,8 +55,30 @@ export default function App() {
 
 function Home() {
   return (
+    
     <div className="home">
-      <img src={bg} alt=""></img>
+      <div className="mobiletitle">
+        <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+      </div>
+      <div className="topnav">
+        <div className="title">
+          <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+        </div>
+        <div className="navbarcontainer">
+          <ul className="navbar">
+            <li><Link to="/about">About Me</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/">Home</Link></li>
+          </ul>
+        </div>
+        <div className="navbarcontainer">
+          <ul className="mobilenav">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/about">About Me</Link></li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
