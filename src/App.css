@@ -205,13 +205,14 @@
 }
 
 .imagecontainer {
-  animation-name: fade-in;
-  animation-duration: 1s;
+  background-color: #141518;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .image {
-  width: 80%;
-  margin: 50px auto 0 auto;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .image img {
@@ -288,6 +289,23 @@
 
   .mobilenav {
     display: flex;
+  }
+
+  .close {
+    top: 150px;
+    right: 24px;
+  }
+
+  .imagecontainer {
+    padding-top: 35%;
+  }
+
+  .image {
+    width: 80%;
+  }
+
+  .prev, .next {
+    display: none;
   }
 }
 
