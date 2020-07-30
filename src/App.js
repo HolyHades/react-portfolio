@@ -48,6 +48,7 @@ export default function App() {
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
+        <Route path="/success" component={success} />
       </Switch>
     </div>
     </Router>
@@ -106,18 +107,18 @@ function About() {
   return (
     <div className="about">
       <h1>About Me</h1>
-      <p>This is a website.</p>
-      <p>Leave me a message:</p>
+      <p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
+      <p className="abouttext">Leave me a message:</p>
       <form name="contact" method="post" className="form">
         <input type="hidden" name="form-name" value="contact" />
         <p>
-          <label>Your Name: <br></br><input type="text" name="name"/></label>
+          <label>Your Name: <br /><input type="text" name="name"/></label>
         </p>
         <p>
-          <label>Your Email: <br></br><input type="email" name="email"/></label>
+          <label>Your Email: <br /><input type="email" name="email"/></label>
         </p>
         <p>
-          <label>Message: <br></br><textarea name="message"></textarea></label>
+          <label>Message: <br /><textarea name="message"></textarea></label>
         </p>
         <p>
           <button type="submit">Submit</button>
@@ -214,6 +215,16 @@ function image7() {
       </div>
       <Link to="/image6"><span className="prev">&#10094;</span></Link>
       <Link to="/image1"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function success() {
+  return (
+    <div className="about">
+      <h1>Success!</h1>
+      <p className="abouttext">Thank you for submitting your message.</p>
+      <Link to="/"><p className="backlink">Go back</p></Link>
     </div>
   )
 }
