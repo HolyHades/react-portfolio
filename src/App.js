@@ -111,13 +111,13 @@ function About() {
       <p className="abouttext">Leave me a message:</p>
       <form name="contact" method="post" className="form">
         <input type="hidden" name="form-name" value="contact" />
-        <p>
+        <p className="abouttext">
           <label>Your Name: <br /><input type="text" name="name"/></label>
         </p>
-        <p>
+        <p className="abouttext">
           <label>Your Email: <br /><input type="email" name="email"/></label>
         </p>
-        <p>
+        <p className="abouttext">
           <label>Message: <br /><textarea name="message"></textarea></label>
         </p>
         <p>
