@@ -15,11 +15,11 @@ export default function App() {
     <Router>
     <div className="App">
       <div className="mobiletitle">
-        <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+        <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
       </div>
       <div className="topnav">
         <div className="title">
-          <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+          <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
         </div>
         <div className="navbarcontainer">
           <ul className="navbar">
@@ -59,11 +59,11 @@ function Home() {
     
     <div className="home">
       <div className="mobiletitle">
-        <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+        <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
       </div>
       <div className="topnav">
         <div className="title">
-          <h1>Felix Fröhlich<br></br><p>Fotografie</p></h1>
+          <Link to="/"><h1>Felix Fröhlich<br></br><p>Fotografie</p></h1></Link>
         </div>
         <div className="navbarcontainer">
           <ul className="navbar">
