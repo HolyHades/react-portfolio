@@ -48,7 +48,7 @@ export default function App() {
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
-        <Route path="/success" component={success} />
+        <Route path="/thankyou" component={success} />
       </Switch>
     </div>
     </Router>
@@ -109,7 +109,7 @@ function About() {
       <h1>About Me</h1>
       <p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
       <p className="abouttext">Leave me a message:</p>
-      <form name="contact" method="post" action="/success" className="form">
+      <form name="contact" method="post" action="/thankyou" className="form">
         <input type="hidden" name="form-name" value="contact" />
         <p className="abouttext">
           <label>Your Name: <br /><input type="text" name="name"/></label>
