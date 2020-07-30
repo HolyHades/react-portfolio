@@ -107,6 +107,7 @@ h1 {
   position: absolute;
   top: 24px;
   right: 20px;
+  margin-right: 48px;
 }
 
 .navbar li {
@@ -124,6 +125,13 @@ h1 {
 .navbar a:hover {
   background-color: white;
   color: #141518;
+}
+
+.navimg {
+  width: 36px;
+  position: absolute;
+  top: 32px;
+  right: 28px;
 }
 
 .mobilenav {
@@ -282,27 +290,24 @@ h1 {
   padding: 24px;
 }
 
-@media (max-width: 1455px) {
-  .home img {
-    height: 100%;
-    width: auto;
-  }
-}
-
 @media (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (orientation: portrait) and (max-width: 500px) {
+@media (max-width: 800px) {
   .mobiletitle {
-      display: block;
-      font-size: 40px;
+    display: block;
+    font-size: 40px;
   }
 
   .topnav {
     height: 48px;
+  }
+
+  .navimg {
+    display: none;
   }
 
   .title {
@@ -320,8 +325,10 @@ h1 {
   .mobilenav {
     display: flex;
   }
+}
 
-  .grid {
+@media (orientation: portrait) and (max-width: 500px) {
+    .grid {
     grid-template-columns: 1fr;
   }
 

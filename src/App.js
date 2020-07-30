@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
-import bg from "./photos/bg.jpg"
+import ins from "./photos/instagram-logo.png"
 import img1 from "./photos/pic1.jpg"
 import img2 from "./photos/pic2.jpg"
 import img3 from "./photos/pic3.jpg"
@@ -27,6 +27,7 @@ export default function App() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
+          <a href="https://instagram.com/felx_fr"><img src={ins} class="navimg" alt=""></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
@@ -70,6 +71,7 @@ function Home() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
+          <a href="https://instagram.com/felx_fr"><img src={ins} class="navimg" alt=""></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
