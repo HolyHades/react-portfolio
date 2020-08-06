@@ -52,13 +52,20 @@ export default function App() {
         </AnimatedSwitch>
       </Switch>
       <Switch>
-      <Route path="/image1" component={image1} />
+        <AnimatedSwitch
+        atEnter={{ translatex: -1000 }}
+        atLeave={{ translatex: -1000 }}
+        atActive={{ translatex: 0 }}
+        className="switch-wrapper"
+        >
+        <Route path="/image1" component={image1} />
         <Route path="/image2" component={image2} />
         <Route path="/image3" component={image3} />
         <Route path="/image4" component={image4} />
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
+        </AnimatedSwitch>
       </Switch>
     </div>
     </Router>
