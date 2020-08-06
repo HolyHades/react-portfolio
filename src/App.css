@@ -162,7 +162,7 @@ h1 {
   color: white;
   padding-bottom: 24px;
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .gallery h1 {
@@ -220,7 +220,7 @@ h1 {
   height: 100%;
   display: flex;
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .image {
@@ -271,7 +271,7 @@ h1 {
   color: white;
   padding-bottom: 24px;
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .about h1 {
