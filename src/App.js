@@ -40,9 +40,9 @@ export default function App() {
       </div>
       <Switch>
         <AnimatedSwitch
-        atEnter={{ opacity: 0 }}
-        atLeave={{ opacity: 0 }}
-        atActive={{ opacity: 1 }}
+        atEnter={{ opacity: 0, translateX: -1000 }}
+        atLeave={{ opacity: 0, translateX: -1000 }}
+        atActive={{ opacity: 1, translateX: 0 }}
         className="switch-wrapper"
         >
         <Route path="/" exact component={Home} />
@@ -50,14 +50,6 @@ export default function App() {
         <Route path="/gallery"  component={Gallery} />
         <Route path="/thankyou" component={success} />
         </AnimatedSwitch>
-      </Switch>
-      <Switch>
-        <AnimatedSwitch
-        atEnter={{ translatex: -1000 }}
-        atLeave={{ translatex: -1000 }}
-        atActive={{ translatex: 0 }}
-        className="switch-wrapper"
-        >
         <Route path="/image1" component={image1} />
         <Route path="/image2" component={image2} />
         <Route path="/image3" component={image3} />
@@ -65,7 +57,6 @@ export default function App() {
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
-        </AnimatedSwitch>
       </Switch>
     </div>
     </Router>
