@@ -112,6 +112,8 @@ function Gallery() {
         <Link to="/image5"><img src={img5} alt="" /></Link>
         <Link to="/image6"><img src={img6} alt="" /></Link>
         <Link to="/image7"><img src={img7} alt="" /></Link>
+        <Link to="/image8"><img src={img8} alt="" /></Link>
+        <Link to="/image9"><img src={img9} alt="" /></Link>
       </div>
     </div>
   )
