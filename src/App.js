@@ -40,9 +40,9 @@ export default function App() {
       </div>
       <Switch>
         <AnimatedSwitch
-        atEnter={{ opacity: 0, translateX: -1000 }}
-        atLeave={{ opacity: 0, translateX: -1000 }}
-        atActive={{ opacity: 1, translateX: 0 }}
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
         className="switch-wrapper"
         >
         <Route path="/" exact component={Home} />
