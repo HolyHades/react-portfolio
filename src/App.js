@@ -48,6 +48,10 @@ export default function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
         <Route path="/gallery"  component={Gallery} />
+        <Route path="/thankyou" component={success} />
+        </AnimatedSwitch>
+      </Switch>
+      <Switch>
         <Route path="/image1" component={image1} />
         <Route path="/image2" component={image2} />
         <Route path="/image3" component={image3} />
@@ -55,8 +59,6 @@ export default function App() {
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
-        <Route path="/thankyou" component={success} />
-        </AnimatedSwitch>
       </Switch>
     </div>
     </Router>

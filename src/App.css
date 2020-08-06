@@ -201,6 +201,8 @@ h1 {
   cursor: pointer;
   padding: 0 16px;
   border-radius: 8px;
+  animation-name: fade-in;
+  animation-duration: 1s;
 }
 
 .close:hover {
@@ -223,6 +225,8 @@ h1 {
   width: 70%;
   margin: 0 auto;
   align-self: center;
+  animation-name: fade-in;
+  animation-duration: 1s;
 }
 
 .image img {
@@ -242,6 +246,8 @@ h1 {
   transition: 0.3s;
   border-radius: 0 8px 8px 0;
   font-size: 40px;
+  animation-name: fade-in;
+  animation-duration: 1s;
 }
 
 .next {
@@ -425,5 +431,23 @@ h1 {
 
   .abouttext {
     font-size: 24px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
