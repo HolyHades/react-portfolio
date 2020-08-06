@@ -50,7 +50,9 @@ export default function App() {
         <Route path="/gallery"  component={Gallery} />
         <Route path="/thankyou" component={success} />
         </AnimatedSwitch>
-        <Route path="/image1" component={image1} />
+      </Switch>
+      <Switch>
+      <Route path="/image1" component={image1} />
         <Route path="/image2" component={image2} />
         <Route path="/image3" component={image3} />
         <Route path="/image4" component={image4} />
