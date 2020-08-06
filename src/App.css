@@ -161,8 +161,6 @@ h1 {
 .gallery {
   color: white;
   padding-bottom: 24px;
-  animation-name: fade-in;
-  animation-duration: 0.5s;
 }
 
 .gallery h1 {
@@ -268,8 +266,6 @@ h1 {
 .about {
   color: white;
   padding-bottom: 24px;
-  animation-name: fade-in;
-  animation-duration: 0.5s;
 }
 
 .about h1 {
@@ -343,6 +339,14 @@ h1 {
   color: #141518;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }
 
 @media (max-width: 1000px) {
@@ -419,18 +423,5 @@ h1 {
 
   .abouttext {
     font-size: 24px;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
   }
 }

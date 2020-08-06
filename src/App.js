@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {AnimatedSwitch} from "react-router-transition";
 import ins from "./photos/instagram-logo.png"
 import img1 from "./photos/pic1.jpg"
 import img2 from "./photos/pic2.jpg"
@@ -38,6 +39,12 @@ export default function App() {
         </div>
       </div>
       <Switch>
+        <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className="switch-wrapper"
+        >
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
         <Route path="/gallery"  component={Gallery} />
@@ -49,6 +56,7 @@ export default function App() {
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
         <Route path="/thankyou" component={success} />
+        </AnimatedSwitch>
       </Switch>
     </div>
     </Router>
