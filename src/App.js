@@ -10,6 +10,8 @@ import img4 from "./photos/pic4.jpg"
 import img5 from "./photos/pic5.jpg"
 import img6 from "./photos/pic6.jpg"
 import img7 from "./photos/pic7.jpg"
+import img8 from "./photos/pic8.jpg"
+import img9 from "./photos/pic9.jpg"
 
 export default function App() {
   return (
@@ -59,6 +61,8 @@ export default function App() {
         <Route path="/image5" component={image5} />
         <Route path="/image6" component={image6} />
         <Route path="/image7" component={image7} />
+        <Route path="/image8" component={image8} />
+        <Route path="/image9" component={image9} />
       </Switch>
     </div>
     </Router>
@@ -145,7 +149,7 @@ function image1() {
       <div className="image">
         <img src={img1} alt=""></img>
       </div>
-      <Link to="/image7"><span className="prev">&#10094;</span></Link>
+      <Link to="/image9"><span className="prev">&#10094;</span></Link>
       <Link to="/image2"><span className="next">&#10095;</span></Link>
     </div>
   )
@@ -224,6 +228,32 @@ function image7() {
         <img src={img7} alt=""></img>
       </div>
       <Link to="/image6"><span className="prev">&#10094;</span></Link>
+      <Link to="/image8"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image8() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img8} alt=""></img>
+      </div>
+      <Link to="/image7"><span className="prev">&#10094;</span></Link>
+      <Link to="/image9"><span className="next">&#10095;</span></Link>
+    </div>
+  )
+}
+
+function image9() {
+  return (
+    <div className="imagecontainer">
+      <Link to="/gallery"><span className="close">&times;</span></Link>
+      <div className="image">
+        <img src={img9} alt=""></img>
+      </div>
+      <Link to="/image8"><span className="prev">&#10094;</span></Link>
       <Link to="/image1"><span className="next">&#10095;</span></Link>
     </div>
   )
