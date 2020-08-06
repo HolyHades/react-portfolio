@@ -343,10 +343,12 @@ h1 {
 
 .switch-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .switch-wrapper > div {
   position: absolute;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
