@@ -40,7 +40,7 @@ export default function App() {
       </div>
       <Switch>
         <AnimatedSwitch
-        atEnter={{ opacity: 0 }}
+        atEnter={{opacity: 0}}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
         className="switch-wrapper"
