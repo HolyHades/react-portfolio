@@ -30,14 +30,14 @@ export default function App() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
-          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt=""></img></a>
+          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
             <li><Link to="/" id="mobilelink">Home</Link></li>
             <li><Link to="/gallery" id="mobilelink">Gallery</Link></li>
             <li><Link to="/about" id="mobilelink">About Me</Link></li>
-            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt=""></img></a></li>
+            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
           </ul>
         </div>
       </div>
@@ -87,14 +87,14 @@ function Home() {
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/">Home</Link></li>
           </ul>
-          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt=""></img></a>
+          <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"></img></a>
         </div>
         <div className="navbarcontainer">
           <ul className="mobilenav">
             <li><Link to="/" id="mobilelink">Home</Link></li>
             <li><Link to="/gallery" id="mobilelink">Gallery</Link></li>
             <li><Link to="/about" id="mobilelink">About Me</Link></li>
-            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt=""></img></a></li>
+            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
           </ul>
         </div>
       </div>
