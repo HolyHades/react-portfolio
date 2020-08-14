@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import {AnimatedSwitch} from "react-router-transition";
@@ -14,6 +14,7 @@ import img8 from "./photos/pic8.jpg"
 import img9 from "./photos/pic9.jpg"
 
 export default function App() {
+  const [open, setOpen] = useState(false);
   return (
     <Router>
     <div className="App">
@@ -33,13 +34,15 @@ export default function App() {
           <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"></img></a>
         </div>
         <div className="navbarcontainer">
-          <ul className="mobilenav">
-            <li><Link to="/" id="mobilelink">Home</Link></li>
-            <li><Link to="/gallery" id="mobilelink">Gallery</Link></li>
-            <li><Link to="/about" id="mobilelink">About Me</Link></li>
-            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
+          <ul className={!open ? "navoff" : "navon"}>
+            <li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
+            <li><h2>Navigation</h2></li>
+            <li><Link to="/" id="mobilelink" onClick={() => setOpen(!open)}>Home</Link></li>
+            <li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
+            <li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
           </ul>
         </div>
+        <span className="burger" onClick={() => setOpen(!open)}>&#9776;</span>
       </div>
       <Switch>
         <AnimatedSwitch
@@ -87,14 +90,6 @@ function Home() {
             <li><Link to="/">Home</Link></li>
           </ul>
           <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"></img></a>
-        </div>
-        <div className="navbarcontainer">
-          <ul className="mobilenav">
-            <li><Link to="/" id="mobilelink">Home</Link></li>
-            <li><Link to="/gallery" id="mobilelink">Gallery</Link></li>
-            <li><Link to="/about" id="mobilelink">About Me</Link></li>
-            <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
-          </ul>
         </div>
       </div>
     </div>
