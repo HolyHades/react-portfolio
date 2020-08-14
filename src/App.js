@@ -40,6 +40,11 @@ export default function App() {
             <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
           </ul>
         </div>
+        <div className="burgercontainer" onClick="burger(this)">
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
       </div>
       <Switch>
         <AnimatedSwitch
@@ -72,7 +77,6 @@ export default function App() {
 
 function Home() {
   return (
-    
     <div className="home">
       <div className="topnav">
       <div className="mobiletitle">
@@ -271,4 +275,8 @@ function success() {
       <Link to="/"><p className="backlink">Go back</p></Link>
     </div>
   )
+}
+
+function burger(x) {
+  x.classList.toggle("change");
 }
