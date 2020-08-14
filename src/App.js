@@ -278,5 +278,5 @@ function success() {
 }
 
 function burger() {
-  document.getElementsByClassName("bar1").classList.toggle("change");
+  alert("doesnt work yet lol");
 }
