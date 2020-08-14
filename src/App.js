@@ -40,11 +40,6 @@ export default function App() {
             <li><a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg2" alt="Instagram Logo"></img></a></li>
           </ul>
         </div>
-        <div className="burgercontainer" onClick={burger()}>
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-        </div>
       </div>
       <Switch>
         <AnimatedSwitch
@@ -275,8 +270,4 @@ function success() {
       <Link to="/"><p className="backlink">Go back</p></Link>
     </div>
   )
-}
-
-function burger() {
-  alert("doesnt work yet lol");
 }
