@@ -74,12 +74,13 @@ export default function App() {
 }
 
 function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="home">
       <div className="topnav">
-      <div className="mobiletitle">
-        <h1>Felix Fröhlich<br></br><p>Photography</p></h1>
-      </div>
+        <div className="mobiletitle">
+          <h1>Felix Fröhlich<br></br><p>Photography</p></h1>
+        </div>
         <div className="title">
           <Link to="/"><h1>Felix Fröhlich<br></br><p>Photography</p></h1></Link>
         </div>
@@ -91,6 +92,16 @@ function Home() {
           </ul>
           <a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"></img></a>
         </div>
+        <div className="navbarcontainer">
+          <ul className={!open ? "navoff" : "navon"}>
+            <li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
+            <li><h2>Navigation</h2></li>
+            <li><Link to="/" id="mobilelink" onClick={() => setOpen(!open)}>Home</Link></li>
+            <li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
+            <li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
+          </ul>
+        </div>
+        <span className="homeburger" onClick={() => setOpen(!open)}>&#9776;</span>
       </div>
     </div>
   )

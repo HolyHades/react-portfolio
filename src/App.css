@@ -206,6 +206,26 @@ h1 {
   color: #141518;
 }
 
+.homeburger {
+  color: white;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  font-size: 40px;
+  z-index: 4;
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 0 10px;
+  display: none;
+}
+
+.homeburger:hover {
+  background-color: white;
+  color: #141518;
+}
+
 .mobileclose {
   color: white;
   font-size: 48px;
@@ -234,7 +254,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   background-image: url(./photos/bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -451,6 +471,10 @@ h1 {
   }
 
   .burger {
+    display: block;
+  }
+
+  .homeburger {
     display: block;
   }
 
