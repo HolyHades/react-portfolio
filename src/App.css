@@ -163,11 +163,13 @@ h1 {
 .navon h2 {
   color: white;
   margin: 16px 0;
+  font-size: 56px;
 }
 
 .navoff h2 {
   color: white;
   margin: 16px 0;
+  font-size: 56px;
 }
 
 #mobilelink {
@@ -175,6 +177,7 @@ h1 {
   padding: 16px;
   color: white;
   margin: 0 auto;
+  font-size: 32px;
 }
 
 #mobilelink:hover {
@@ -189,11 +192,11 @@ h1 {
   position: fixed;
   bottom: 50px;
   left: 50px;
-  font-size: 48px;
+  font-size: 32px;
   z-index: 2;
   transition: 0.3s;
   border-radius: 8px;
-  padding: 0 16px;
+  padding: 0 8px;
   background-color: #141518;
   display: none;
 }
@@ -205,10 +208,10 @@ h1 {
 
 .mobileclose {
   color: white;
-  font-size: 64px;
-  padding: 0 24px;
+  font-size: 48px;
+  padding: 0 16px;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   left: 50px;
   cursor: pointer;
