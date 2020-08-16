@@ -49,12 +49,11 @@ export default function App() {
         atEnter={{opacity: 0}}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
-        className="switch-wrapper"
-        >
-        <Route path="/" exact component={Home} />
-        <Route path="/about"  component={About} />
-        <Route path="/gallery"  component={Gallery} />
-        <Route path="/thankyou" component={success} />
+        className="switch-wrapper">
+          <Route path="/" exact component={Home} />
+          <Route path="/about"  component={About} />
+          <Route path="/gallery"  component={Gallery} />
+          <Route path="/thankyou" component={success} />
         </AnimatedSwitch>
       </Switch>
       <Switch>
