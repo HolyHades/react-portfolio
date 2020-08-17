@@ -394,8 +394,10 @@ h1 {
 
 .abouttext {
 	font-size: 32px;
-	margin: 0 20px;
+	margin: 0 auto;
+	width: 500px;
 	margin-bottom: 32px;
+	transition: 0.3s;
 }
 
 .backlink {
@@ -418,10 +420,18 @@ h1 {
 	text-decoration: none;
 	width: 140px;
 	outline: none;
+	transition: 0.3s;
+	padding: 4px;
+	border-radius: 8px;
 }
 
 .about a:visited {
 	color: white;
+}
+
+.about a:hover {
+	color: #141518;
+	background-color: white;
 }
 
 .form {
@@ -597,6 +607,10 @@ h1 {
 	.form textarea {
 		width: 400px;
 	}
+
+	.abouttext {
+		width: 400px;
+	}
 }
 
 @media (orientation: portrait) and (max-width: 500px) {
@@ -622,6 +636,7 @@ h1 {
 
 	.abouttext {
 		font-size: 24px;
+		width: 300px;
 	}
 }
 

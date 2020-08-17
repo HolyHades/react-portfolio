@@ -131,7 +131,7 @@ function About() {
 		<div className="about">
 			<h1>About Me</h1>
 			<p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
-			<p className="abouttext">Leave me a message:</p>
+			<p className="abouttext">Send me an E-Mail under <a href="mailto:felx.froehlich@gmail.com">felx.froehlich@gmail.com</a> or leave me a message below:</p>
 			<form name="contact" method="post" action="/thankyou" className="form">
 				<input type="hidden" name="form-name" value="contact" />
 				<div className="inputwrapper">
