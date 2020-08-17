@@ -90,7 +90,7 @@ function Home() {
 						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/">Home</Link></li>
 					</ul>
-					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"/></a>
+					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo Home"/></a>
 				</div>
 				<div className="navbarcontainer">
 					<ul className={!open ? "navoff" : "navon"}>
