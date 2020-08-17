@@ -19,22 +19,22 @@ export default function App() {
 	return (
 		<Router>
 		<div className="App">
-			<div className="mobiletitle">
-				<h1>Felix Fröhlich<br/><p>Photography</p></h1>
-			</div>
-			<div className="topnav">
+			<header className="topnav">
 				<div className="title">
 					<Link to="/"><h1>Felix Fröhlich<br/><p>Photography</p></h1></Link>
 				</div>
-				<div className="navbarcontainer">
+				<div className="mobiletitle">
+					<h1>Felix Fröhlich<br/><p>Photography</p></h1>
+				</div>
+				<nav className="navbarcontainer">
 					<ul className="navbar">
 						<li><Link to="/about">About Me</Link></li>
 						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/">Home</Link></li>
 					</ul>
 					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"/></a>
-				</div>
-				<div className="navbarcontainer">
+				</nav>
+				<nav className="navbarcontainer">
 					<ul className={!open ? "navoff" : "navon"}>
 						<li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
 						<li><h2>Navigation</h2></li>
@@ -42,9 +42,9 @@ export default function App() {
 						<li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
 						<li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
 					</ul>
-				</div>
+				</nav>
 				<span className="burger" onClick={() => setOpen(!open)}>&#9776;</span>
-			</div>
+			</header>
 			<Switch>
 				<AnimatedSwitch
 				atEnter={{opacity: 0}}
@@ -77,22 +77,22 @@ function Home() {
 	const [open, setOpen] = useState(false);
 	return (
 		<div className="home">
-			<div className="topnav">
-				<div className="mobiletitle">
-					<h1>Felix Fröhlich<br/><p>Photography</p></h1>
-				</div>
+			<header className="topnav">
 				<div className="title">
 					<Link to="/"><h1>Felix Fröhlich<br/><p>Photography</p></h1></Link>
 				</div>
-				<div className="navbarcontainer">
+				<div className="mobiletitle">
+					<h1>Felix Fröhlich<br/><p>Photography</p></h1>
+				</div>
+				<nav className="navbarcontainer">
 					<ul className="navbar">
 						<li><Link to="/about">About Me</Link></li>
 						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/">Home</Link></li>
 					</ul>
 					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo Home"/></a>
-				</div>
-				<div className="navbarcontainer">
+				</nav>
+				<nav className="navbarcontainer">
 					<ul className={!open ? "navoff" : "navon"}>
 						<li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
 						<li><h2>Navigation</h2></li>
@@ -100,16 +100,16 @@ function Home() {
 						<li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
 						<li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
 					</ul>
-				</div>
+				</nav>
 				<span className="homeburger" onClick={() => setOpen(!open)}>&#9776;</span>
-			</div>
+			</header>
 		</div>
 	)
 }
 
 function Gallery() {
 	return (
-		<div className="gallery">
+		<main className="gallery">
 			<h1>Gallery</h1>
 			<div className="grid">
 				<Link to="/image1"><img src={img1} alt=""/></Link>
@@ -122,13 +122,13 @@ function Gallery() {
 				<Link to="/image8"><img src={img8} alt=""/></Link>
 				<Link to="/image9"><img src={img9} alt=""/></Link>
 			</div>
-		</div>
+		</main>
 	)
 }
 
 function About() {
 	return (
-		<div className="about">
+		<main className="about">
 			<h1>About Me</h1>
 			<p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
 			<p className="abouttext">Send me an E-Mail under <a href="mailto:felx.froehlich@gmail.com">felx.froehlich@gmail.com</a> or leave me a message below:</p>
@@ -148,133 +148,133 @@ function About() {
 				</div>
 				<button type="submit">Submit</button>
 			</form>
-		</div>
+		</main>
 	)
 }
 
 function image1() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img1} alt=""/>
 			</div>
 			<Link to="/image9"><span className="prev">&#10094;</span></Link>
 			<Link to="/image2"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image2() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img2} alt=""/>
 			</div>
 			<Link to="/image1"><span className="prev">&#10094;</span></Link>
 			<Link to="/image3"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image3() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img3} alt=""/>
 			</div>
 			<Link to="/image2"><span className="prev">&#10094;</span></Link>
 			<Link to="/image4"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image4() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img4} alt=""/>
 			</div>
 			<Link to="/image3"><span className="prev">&#10094;</span></Link>
 			<Link to="/image5"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image5() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img5} alt=""/>
 			</div>
 			<Link to="/image4"><span className="prev">&#10094;</span></Link>
 			<Link to="/image6"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image6() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img6} alt=""/>
 			</div>
 			<Link to="/image5"><span className="prev">&#10094;</span></Link>
 			<Link to="/image7"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image7() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img7} alt=""/>
 			</div>
 			<Link to="/image6"><span className="prev">&#10094;</span></Link>
 			<Link to="/image8"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image8() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img8} alt=""/>
 			</div>
 			<Link to="/image7"><span className="prev">&#10094;</span></Link>
 			<Link to="/image9"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function image9() {
 	return (
-		<div className="imagecontainer">
+		<main className="imagecontainer">
 			<Link to="/gallery"><span className="close">&times;</span></Link>
 			<div className="image">
 				<img src={img9} alt=""/>
 			</div>
 			<Link to="/image8"><span className="prev">&#10094;</span></Link>
 			<Link to="/image1"><span className="next">&#10095;</span></Link>
-		</div>
+		</main>
 	)
 }
 
 function success() {
 	return (
-		<div className="about">
+		<main className="about">
 			<h1>Success!</h1>
 			<p className="abouttext">Thank you for submitting your message.</p>
 			<Link to="/"><p className="backlink">Go back</p></Link>
-		</div>
+		</main>
 	)
 }
