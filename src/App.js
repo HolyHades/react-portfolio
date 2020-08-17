@@ -21,10 +21,14 @@ export default function App() {
 		<div className="App">
 			<header className="topnav">
 				<div className="title">
-					<Link to="/"><h1>Felix Fröhlich<br/><p>Photography</p></h1></Link>
+					<Link to="/">
+						<h1>Felix Fröhlich</h1>
+						<h2>Photography</h2>
+						</Link>
 				</div>
 				<div className="mobiletitle">
-					<h1>Felix Fröhlich<br/><p>Photography</p></h1>
+					<h1>Felix Fröhlich</h1>
+					<h2>Photography</h2>
 				</div>
 				<nav className="navbarcontainer">
 					<ul className="navbar">
@@ -79,10 +83,14 @@ function Home() {
 		<div className="home">
 			<header className="topnav">
 				<div className="title">
-					<Link to="/"><h1>Felix Fröhlich<br/><p>Photography</p></h1></Link>
+					<Link to="/">
+						<h1>Felix Fröhlich</h1>
+						<h2>Photography</h2>
+					</Link>
 				</div>
 				<div className="mobiletitle">
-					<h1>Felix Fröhlich<br/><p>Photography</p></h1>
+					<h1>Felix Fröhlich</h1>
+					<h2>Photography</h2>
 				</div>
 				<nav className="navbarcontainer">
 					<ul className="navbar">
