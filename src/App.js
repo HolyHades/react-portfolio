@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import {AnimatedSwitch} from "react-router-transition";
+import TextareaAutosize from "react-textarea-autosize";
 import ins from "./photos/instagram-logo.png"
 import img1 from "./photos/pic1.jpg"
 import img2 from "./photos/pic2.jpg"
@@ -142,7 +143,7 @@ function About() {
           <label for="email" id="emaillabel">E-Mail</label>
         </div>
         <div className = "inputwrapper">
-          <textarea name="message" id="messagetextarea" rows="1" required></textarea>
+          <TextareaAutosize name="message" id="messagetextarea" rows="1" required></TextareaAutosize>
           <label for="Message" id="messagelabel">Message</label>
         </div>
         <button type="submit">Submit</button>

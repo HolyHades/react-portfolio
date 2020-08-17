@@ -288,13 +288,16 @@ h1 {
   padding-bottom: 24px;
 }
 
+.grid a {
+  outline: none;
+}
+
 .grid img {
   width: 100%;
   border-radius: 8px;
   border: 2px solid white;
   transition: 0.3s;
   cursor: pointer;
-  outline: none;
 }
 
 .grid img:hover {
@@ -429,6 +432,7 @@ h1 {
 
 .inputwrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .form label {
@@ -457,7 +461,7 @@ h1 {
   color: white;
 }
 
-.form textarea {
+#messagetextarea {
   appearance: none;
   width: 500px;
   font-size: 24px;
