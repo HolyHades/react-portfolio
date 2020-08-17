@@ -125,7 +125,7 @@ h1 {
   text-align: center;
   font-size: 24px;
   transform: translateY(0%);
-  z-index: 3;
+  z-index: 5;
   transition: 0.3s;
   width: 100vw;
   height: 100vh;
@@ -142,7 +142,7 @@ h1 {
   text-align: center;
   font-size: 24px;
   transform: translateY(100%);
-  z-index: 3;
+  z-index: 5;
   transition: 0.3s;
   width: 100vw;
   height: 100vh;
