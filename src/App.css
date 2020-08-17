@@ -461,7 +461,7 @@ h1 {
 	color: white;
 }
 
-.form input:focus, .form input:valid {
+.form input:focus {
 	border-bottom: 1px solid dodgerblue;
 }
 
@@ -484,7 +484,7 @@ h1 {
 	color: white;
 }
 
-#messagetextarea:focus, #messagetextarea:valid {
+#messagetextarea:focus {
 	border-bottom: 1px solid dodgerblue;
 }
 
