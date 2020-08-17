@@ -461,9 +461,14 @@ h1 {
 	color: white;
 }
 
+.form input:focus, .form input:valid {
+	border-bottom: 1px solid dodgerblue;
+}
+
 #messagetextarea {
 	appearance: none;
 	width: 500px;
+	overflow: hidden;
 	font-size: 24px;
 	resize: none;
 	margin-top: 8px;
@@ -477,6 +482,10 @@ h1 {
 	outline: none;
 	background-color: transparent;
 	color: white;
+}
+
+#messagetextarea:focus, #messagetextarea:valid {
+	border-bottom: 1px solid dodgerblue;
 }
 
 #nameinput:focus ~ #namelabel,

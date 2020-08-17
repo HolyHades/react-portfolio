@@ -143,7 +143,7 @@ function About() {
 					<label for="email" id="emaillabel">E-Mail</label>
 				</div>
 				<div className = "inputwrapper">
-					<TextareaAutosize name="message" id="messagetextarea" rows="1" required></TextareaAutosize>
+					<TextareaAutosize name="message" id="messagetextarea" required></TextareaAutosize>
 					<label for="Message" id="messagelabel">Message</label>
 				</div>
 				<button type="submit">Submit</button>
