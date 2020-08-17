@@ -425,8 +425,6 @@ h2 {
 	width: 140px;
 	outline: none;
 	transition: 0.3s;
-	padding: 4px;
-	border-radius: 8px;
 }
 
 .about a:visited {
@@ -434,8 +432,7 @@ h2 {
 }
 
 .about a:hover {
-	color: #141518;
-	background-color: white;
+	color: dodgerblue;
 }
 
 .form {
