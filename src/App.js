@@ -133,12 +133,18 @@ function About() {
       <p className="abouttext">Leave me a message:</p>
       <form name="contact" method="post" action="/thankyou" className="form">
         <input type="hidden" name="form-name" value="contact" />
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Name"></input>
-        <label for="email">E-Mail</label>
-        <input type="email" name="email" placeholder="E-Mail"></input>
-        <label for="Message">Message</label>
-        <textarea name="message" placeholder="Message"></textarea>
+        <div className="inputwrapper">
+          <input type="text" name="name" id="nameinput" required></input>
+          <label for="name" id="namelabel">Name</label>
+        </div>
+        <div className = "inputwrapper">
+          <input type="text" name="email" id="emailinput" required></input>
+          <label for="email" id="emaillabel">E-Mail</label>
+        </div>
+        <div className = "inputwrapper">
+          <textarea name="message" id="messagetextarea" rows="1" required></textarea>
+          <label for="Message" id="messagelabel">Message</label>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div>
