@@ -132,19 +132,14 @@ function About() {
       <p className="abouttext">Rewrote my website in React.js, this is what I came up with.</p>
       <p className="abouttext">Leave me a message:</p>
       <form name="contact" method="post" action="/thankyou" className="form">
-        <input type="hidden" name="form-name" value="contact"/>
-        <p className="abouttext">
-          <label>Your Name:<br/><input type="text" name="name"/></label>
-        </p>
-        <p className="abouttext">
-          <label>Your Email:<br/><input type="email" name="email"/></label>
-        </p>
-        <p className="abouttext">
-          <label>Message:<br/><textarea name="message"/></label>
-        </p>
-        <p>
-          <button type="submit">Submit</button>
-        </p>
+        <input type="hidden" name="form-name" value="contact" />
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name"></input>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" placeholder="E-Mail"></input>
+        <label for="Message">Message</label>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
       </form>
     </div>
   )
