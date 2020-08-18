@@ -418,6 +418,8 @@ h2 {
 	transition: 0.3s;
 	cursor: pointer;
 	border: 1px solid white;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 24px;
 }
 
