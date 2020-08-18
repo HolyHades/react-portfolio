@@ -80,7 +80,6 @@ export default function App() {
 						<Route path="/" exact component={Home} />
 						<Route path="/about" component={About} />
 						<Route path="/gallery" component={Gallery} />
-						<Route path="/thankyou" component={success} />
 					</AnimatedSwitch>
 				</Switch>
 				<Switch>
@@ -212,7 +211,6 @@ function About() {
 			<form
 				name="contact"
 				method="post"
-				action="/thankyou"
 				className="form"
 			>
 				<input type="hidden" name="form-name" value="contact" />
@@ -420,18 +418,6 @@ function image9() {
 			</Link>
 			<Link to="/image1">
 				<span className="next">&#10095;</span>
-			</Link>
-		</main>
-	);
-}
-
-function success() {
-	return (
-		<main className="about">
-			<h1>Success!</h1>
-			<p className="abouttext">Thank you for submitting your message.</p>
-			<Link to="/">
-				<p className="backlink">Go back</p>
 			</Link>
 		</main>
 	);
