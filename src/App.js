@@ -208,11 +208,7 @@ function About() {
 				</a>{" "}
 				or leave me a message below:
 			</p>
-			<form
-				name="contact"
-				method="post"
-				className="form"
-			>
+			<form name="contact" method="post" className="form">
 				<input type="hidden" name="form-name" value="contact" />
 				<div className="inputwrapper">
 					<input

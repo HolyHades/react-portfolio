@@ -265,7 +265,8 @@ h2 {
 	width: 100%;
 }
 
-.prev, .next {
+.prev,
+.next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
