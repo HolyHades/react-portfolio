@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import {AnimatedSwitch} from "react-router-transition";
@@ -15,7 +15,6 @@ import img8 from "./photos/pic8.jpg"
 import img9 from "./photos/pic9.jpg"
 
 export default function App() {
-	const [open, setOpen] = useState(false);
 	return (
 		<Router>
 		<div className="App">
@@ -32,22 +31,19 @@ export default function App() {
 				</div>
 				<nav className="navbarcontainer">
 					<ul className="navbar">
-						<li><Link to="/about">About Me</Link></li>
+						<li><Link to="/about">About</Link></li>
 						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/">Home</Link></li>
 					</ul>
 					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo"/></a>
 				</nav>
-				<nav className="navbarcontainer">
-					<ul className={!open ? "navoff" : "navon"}>
-						<li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
-						<li><h2>Navigation</h2></li>
-						<li><Link to="/" id="mobilelink" onClick={() => setOpen(!open)}>Home</Link></li>
-						<li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
-						<li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
+				<nav className="mobilenav">
+					<ul>
+						<li><Link to="/" className="mobilelink">Home</Link></li>
+						<li><Link to="/gallery" className="mobilelink">Gallery</Link></li>
+						<li><Link to="/about" className="mobilelink">About</Link></li>
 					</ul>
 				</nav>
-				<span className="burger" onClick={() => setOpen(!open)}>&#9776;</span>
 			</header>
 			<Switch>
 				<AnimatedSwitch
@@ -78,7 +74,6 @@ export default function App() {
 }
 
 function Home() {
-	const [open, setOpen] = useState(false);
 	return (
 		<div className="home">
 			<header className="topnav">
@@ -100,16 +95,13 @@ function Home() {
 					</ul>
 					<a href="https://instagram.com/felx_fr"><img src={ins} className="navimg" id="navimg1" alt="Instagram Logo Home"/></a>
 				</nav>
-				<nav className="navbarcontainer">
-					<ul className={!open ? "navoff" : "navon"}>
-						<li><span className="mobileclose" onClick={() => setOpen(!open)}>&times;</span></li>
-						<li><h2>Navigation</h2></li>
-						<li><Link to="/" id="mobilelink" onClick={() => setOpen(!open)}>Home</Link></li>
-						<li><Link to="/gallery" id="mobilelink" onClick={() => setOpen(!open)}>Gallery</Link></li>
-						<li><Link to="/about" id="mobilelink" onClick={() => setOpen(!open)}>About Me</Link></li>
+				<nav className="mobilenavhome">
+					<ul>
+						<li><Link to="/" className="mobilelink">Home</Link></li>
+						<li><Link to="/gallery" className="mobilelink">Gallery</Link></li>
+						<li><Link to="/about" className="mobilelink">About</Link></li>
 					</ul>
 				</nav>
-				<span className="homeburger" onClick={() => setOpen(!open)}>&#9776;</span>
 			</header>
 		</div>
 	)
