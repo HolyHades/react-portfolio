@@ -116,7 +116,7 @@ function Home() {
 				<nav className="navbarcontainer">
 					<ul className="navbar">
 						<li>
-							<Link to="/about">About Me</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
 							<Link to="/gallery">Gallery</Link>
