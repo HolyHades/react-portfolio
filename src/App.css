@@ -120,7 +120,8 @@ h2 {
 	right: 28px;
 }
 
-.mobilenav, .mobilenavhome {
+.mobilenav,
+.mobilenavhome {
 	display: none;
 	position: fixed;
 	bottom: 0;
@@ -134,7 +135,8 @@ h2 {
 	z-index: 3;
 }
 
-.mobilenav ul, .mobilenavhome ul {
+.mobilenav ul,
+.mobilenavhome ul {
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -149,11 +151,13 @@ h2 {
 	background-color: transparent;
 }
 
-.mobilenav li, .mobilenavhome li {
+.mobilenav li,
+.mobilenavhome li {
 	border-right: 1px solid white;
 }
 
-.mobilenav li:last-child, .mobilenavhome li:last-child {
+.mobilenav li:last-child,
+.mobilenavhome li:last-child {
 	border-right: none;
 }
 
@@ -188,7 +192,6 @@ h2 {
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
-
 }
 
 .gallery {
@@ -300,7 +303,8 @@ h2 {
 	outline: none;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
 	color: #141518;
 	background-color: white;
 }
@@ -504,7 +508,8 @@ h2 {
 		width: 100%;
 	}
 
-	.mobilenav, .mobilenavhome {
+	.mobilenav,
+	.mobilenavhome {
 		display: block;
 	}
 
@@ -513,7 +518,7 @@ h2 {
 	}
 
 	.about {
-		margin-bottom: 48px
+		margin-bottom: 48px;
 	}
 
 	.abouttext {
@@ -544,7 +549,8 @@ h2 {
 		width: 90%;
 	}
 
-	.prev, .next {
+	.prev,
+	.next {
 		display: none;
 	}
 
