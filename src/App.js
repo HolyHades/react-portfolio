@@ -202,7 +202,7 @@ function About() {
 				Rewrote my website in React.js, this is what I came up with.
 			</p>
 			<p className="abouttext">
-				Send me an E-Mail under{" "}
+				Send me an E-Mail to{" "}
 				<a href="mailto:felx.froehlich@gmail.com">
 					felx.froehlich@gmail.com
 				</a>{" "}
