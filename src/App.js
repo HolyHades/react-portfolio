@@ -13,6 +13,15 @@ import img6 from "./photos/pic6.jpg";
 import img7 from "./photos/pic7.jpg";
 import img8 from "./photos/pic8.jpg";
 import img9 from "./photos/pic9.jpg";
+import img1l from "./photos/pic1l.jpg";
+import img2l from "./photos/pic2l.jpg";
+import img3l from "./photos/pic3l.jpg";
+import img4l from "./photos/pic4l.jpg";
+import img5l from "./photos/pic5l.jpg";
+import img6l from "./photos/pic6l.jpg";
+import img7l from "./photos/pic7l.jpg";
+import img8l from "./photos/pic8l.jpg";
+import img9l from "./photos/pic9l.jpg";
 
 export default function App() {
 	return (
@@ -255,7 +264,7 @@ function image1() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img1} alt="" />
+				<img src={img1l} alt="" />
 			</div>
 			<Link to="/image9">
 				<span className="prev">&#10094;</span>
@@ -274,7 +283,7 @@ function image2() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img2} alt="" />
+				<img src={img2l} alt="" />
 			</div>
 			<Link to="/image1">
 				<span className="prev">&#10094;</span>
@@ -293,7 +302,7 @@ function image3() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img3} alt="" />
+				<img src={img3l} alt="" />
 			</div>
 			<Link to="/image2">
 				<span className="prev">&#10094;</span>
@@ -312,7 +321,7 @@ function image4() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img4} alt="" />
+				<img src={img4l} alt="" />
 			</div>
 			<Link to="/image3">
 				<span className="prev">&#10094;</span>
@@ -331,7 +340,7 @@ function image5() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img5} alt="" />
+				<img src={img5l} alt="" />
 			</div>
 			<Link to="/image4">
 				<span className="prev">&#10094;</span>
@@ -350,7 +359,7 @@ function image6() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img6} alt="" />
+				<img src={img6l} alt="" />
 			</div>
 			<Link to="/image5">
 				<span className="prev">&#10094;</span>
@@ -369,7 +378,7 @@ function image7() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img7} alt="" />
+				<img src={img7l} alt="" />
 			</div>
 			<Link to="/image6">
 				<span className="prev">&#10094;</span>
@@ -388,7 +397,7 @@ function image8() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img8} alt="" />
+				<img src={img8l} alt="" />
 			</div>
 			<Link to="/image7">
 				<span className="prev">&#10094;</span>
@@ -407,7 +416,7 @@ function image9() {
 				<span className="close">&times;</span>
 			</Link>
 			<div className="image">
-				<img src={img9} alt="" />
+				<img src={img9l} alt="" />
 			</div>
 			<Link to="/image8">
 				<span className="prev">&#10094;</span>
