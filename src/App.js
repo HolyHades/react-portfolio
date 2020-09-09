@@ -208,7 +208,9 @@ function About() {
 		<main className="about">
 			<h1>About Me</h1>
 			<p className="abouttext">
-				Rewrote my website in React.js, this is what I came up with.
+				I'm Felix Fröhlich, a photographer based in Wolfsburg, Germany.
+				I mainly do product photography, but try out other areas as well
+				from time to time.
 			</p>
 			<p className="abouttext">
 				Send me an E-Mail to{" "}
