@@ -362,7 +362,7 @@ h2 {
 	padding: 10px;
 	padding-left: 0;
 	border: none;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 	transition: 0.3s;
 	outline: none;
 	background-color: transparent;
@@ -370,7 +370,7 @@ h2 {
 }
 
 .form input:focus {
-	border-bottom: 1px solid dodgerblue;
+	border-bottom: 2px solid dodgerblue;
 }
 
 #messagetextarea {
@@ -386,7 +386,7 @@ h2 {
 	padding: 10px;
 	padding-left: 0;
 	border: none;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 	transition: 0.3s;
 	outline: none;
 	background-color: transparent;
@@ -394,7 +394,7 @@ h2 {
 }
 
 #messagetextarea:focus {
-	border-bottom: 1px solid dodgerblue;
+	border-bottom: 2px solid dodgerblue;
 }
 
 #nameinput:focus ~ #namelabel,
@@ -418,7 +418,7 @@ h2 {
 	color: white;
 	transition: 0.3s;
 	cursor: pointer;
-	border: 1px solid white;
+	border: 2px solid white;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 24px;
