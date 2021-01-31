@@ -138,7 +138,7 @@ function Home() {
 							src={ins}
 							className="navimg"
 							id="navimg1"
-							alt="Instagram Logo Home"
+							alt="something else"
 						/>
 					</a>
 				</nav>
